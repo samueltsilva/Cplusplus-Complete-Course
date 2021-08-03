@@ -4,32 +4,9 @@
 
 using namespace std;
 
-class Entity {
-public:
-    virtual string GetName() = 0;
-};
 
-
-class Player : public Entity {
-private:
-    string m_Name;
-public:
-    Player(const string name) {
-        m_Name = name;
-    }
-
-    string GetName() { return m_Name; }
-};
 
 int main() {
-
-    
-    Player* p = new Player("Harley");
-
-    cout << p->GetName() <<  "\n";
-
-    return 0;
-
     int favorite_number;
     cout << "Enter your favorite number between 1 and 100: ";
     cin >> favorite_number;
